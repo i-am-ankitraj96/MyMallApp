@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CE2010</color>
+    <color name="colorPrimaryDark">#CE2010</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorButton">#ffffff</color>
+    <color name="colorSuccessGreen">#078f1a</color>
+    <color name="recyclerViewColor">#d6d6d6</color>
+    <color name="transparent">#faf2f2</color>
+    <color name="signInColor">#f14318</color>
+    <color name="signUpColor">#a5d922</color>
+</resources>

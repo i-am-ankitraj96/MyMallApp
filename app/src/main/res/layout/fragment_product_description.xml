@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ankitraj.mymallapp.ProductDescriptionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/tv_product_description"
+        android:layout_margin="16dp"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A product description is the marketing copy used to describe a product’s value proposition to potential customers. A compelling product description provides customers with details around features, problems it solves and other benefits to help generate a sale.
+
+It’s no wonder they are worried — the quality of a product description can make or break a sale, especially if it doesn’t include the information a shopper needs to make a purchase decision. Providing key product details is critical if you want the shopper to click “Add to Cart” and differentiate your ecommerce website from the competition." />
+
+</FrameLayout>

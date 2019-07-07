@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorAccent"
+    android:layout_marginBottom="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/wishlist_product_img"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bed_img" />
+
+    <TextView
+        android:id="@+id/wishlist_product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="King Bed 2.0.1"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/wishlist_product_img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/slider_background"
+        android:backgroundTint="@color/colorSuccessGreen"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        app:layout_constraintStart_toEndOf="@+id/wishlist_product_img"
+        app:layout_constraintTop_toBottomOf="@+id/wishlist_product_title">
+
+        <TextView
+            android:id="@+id/wishlist_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginEnd="2dp"
+            android:text="4.5"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:src="@mipmap/star_img"
+            android:tint="@color/colorAccent" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/wishlist_total_ratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="(27)ratings"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/wishlist_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Rs. 49999/- "
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/wishlist_product_img"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/wishlist_cut_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Rs.500000/-"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/wishlist_product_price"
+        app:layout_constraintStart_toEndOf="@+id/wishlist_product_price" />
+
+    <TextView
+        android:id="@+id/wishlist_payment_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cash On Delivery Available"
+        app:layout_constraintStart_toStartOf="@+id/wishlist_product_price"
+        app:layout_constraintTop_toBottomOf="@+id/wishlist_product_price" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="(Old Price)"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/wishlist_cut_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wishlist_cut_price"
+        app:layout_constraintTop_toTopOf="@+id/wishlist_cut_price" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wishlist_view_cutter"
+        android:visibility="gone"/>
+
+</android.support.constraint.ConstraintLayout>
